@@ -72,11 +72,13 @@ function log(){
     return false;
   }
   
-  if(arguments.length === 1){
-    arguments = arguments[0];
+  var args = Array.prototype.slice.call(arguments);
+
+  if(args.length === 1){
+    args = args[0];
   }
 
-  console.log(arguments);  
+  console.log(args);  
 }
 
 module.exports = {

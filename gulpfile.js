@@ -57,7 +57,7 @@ gulp.task('watch', function() {
   gulp.watch(app + 'scripts/**/*.js', ['scripts']);
 });
 
-// remove dist folder
+// remove bundels
 gulp.task('clean', function(cb) {
   del([dist], cb);
 });
