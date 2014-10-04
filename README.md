@@ -8,16 +8,16 @@ It provides a prepared development environment based on [gulp](https://github.co
 Install all dependencies. 
 
 ```
-npm install
+$ npm install
 ```
 
 ## Development
 
 Builds the application and starts a webserver with livereload. By default the webserver starts at port 1337.
-You can define a port with gulp --port 3333.
+You can define a port with ```$ gulp --port 3333```.
 
 ```
-gulp
+$ gulp
 ```
 
 ## Build
@@ -25,7 +25,7 @@ gulp
 Builds the application in the dist folder.
 
 ```
-gulp build --type production
+$ gulp build --type production
 ```
 
 
