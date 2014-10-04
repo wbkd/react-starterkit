@@ -1,0 +1,21 @@
+{
+  "name": "starterapp",
+  "version": "0.0.1",
+  "authors": [
+    "@moklick <mo@webkid.io>"
+  ],
+  "description": "A super lightweight starting point for an app.",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://webkid.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
