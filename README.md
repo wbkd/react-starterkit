@@ -1,4 +1,4 @@
-# BMO Starterkit
+# Starterkit
 
 We use this repository as a starting point for our web apps.
 It provides a prepared development environment based on gulp, stylus and webpack.
