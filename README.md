@@ -1,4 +1,4 @@
-# Starterkit
+# Lightweight Webapp Starterkit
 
 We use this repository as a starting point for our web apps.
 It provides a prepared development environment based on gulp, stylus and webpack.
@@ -9,7 +9,6 @@ Install all dependencies. Requirements: node, npm, bower and gulp.
 
 ```
 npm install
-bower install
 ```
 
 ## Development
