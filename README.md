@@ -22,7 +22,7 @@ $ gulp
 
 ## Build
 
-Builds the application in the dist folder.
+Builds a minified version of the application in the dist folder.
 
 ```
 $ gulp build --type production
