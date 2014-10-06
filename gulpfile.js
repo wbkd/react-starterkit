@@ -52,6 +52,12 @@ gulp.task('serve', function() {
   });
 });
 
+// copy images
+gulp.task('images', function(cb) {
+  return gulp.src(app + 'images/**/*.{png,jpg,jpeg,gif}')
+    .pipe(gulp.dest(dist + 'images/'));
+});
+
 // watch styl, html and js file changes
 gulp.task('watch', function() {
   gulp.watch(app + 'stylus/*.styl', ['styles']);
@@ -69,5 +75,5 @@ gulp.task('default', ['build', 'serve', 'watch']);
 
 // waits until clean is finished then builds the project
 gulp.task('build', ['clean'], function(){
-  gulp.start(['html', 'scripts', 'styles']);
+  gulp.start(['images','html','scripts','styles']);
 });
