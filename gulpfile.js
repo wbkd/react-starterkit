@@ -32,7 +32,8 @@ gulp.task('styles',function(cb) {
   return gulp.src(app + 'stylus/main.styl')
     .pipe($.stylus({
       // only compress if we are in production
-      compress: isProduction 
+      compress: isProduction,
+      'include css' : true
     }))
     // add css for production
     .pipe(gulp.dest(dist + 'css/'))
