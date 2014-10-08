@@ -43,7 +43,6 @@ npm install --save imports-loader
 You can use it in your code like:
 
 ```
-var $ = require('../bower_components/jquery/dist/jquery');
 require("imports?jQuery=../bower_components/jquery/dist/jquery!./awesome-plugin.js");
 ```
 
