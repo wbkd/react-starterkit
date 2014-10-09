@@ -21,6 +21,10 @@ You can define a port with ```$ gulp --port 3333```.
 $ gulp
 ```
 
+The entry point for your Javascript stuff is ```app/scripts/main.js``` and the one for CSS is under ```app/stylus/main.styl```. If you want to use third-party CSS you just include it via ```@import 'path/to/your/third-party-styles.css'``` at the top of the main.styl file.
+
+
+
 ## Build
 
 Builds a minified version of the application in the dist folder.
@@ -29,7 +33,7 @@ Builds a minified version of the application in the dist folder.
 $ gulp build --type production
 ```
 
-## Webpack Extensions
+## Webpack Hints
 
 ### Imports Loader
 
