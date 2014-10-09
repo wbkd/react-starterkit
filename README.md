@@ -29,7 +29,7 @@ Builds a minified version of the application in the dist folder.
 $ gulp build --type production
 ```
 
-## Webpack Extensions
+## Webpack Hints
 
 ### Imports Loader
 
