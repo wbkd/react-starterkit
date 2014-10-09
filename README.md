@@ -14,13 +14,16 @@ $ npm install
 ## Development
 
 Builds the application and starts a webserver with livereload. By default the webserver starts at port 1337.
-You can define a port with ```$ gulp --port 3333```.
+You can define a port with `$ gulp --port 3333`.
 
 ```
 $ gulp
 ```
 
-The entry point for your Javascript stuff is ```app/scripts/main.js``` and the one for CSS is under ```app/stylus/main.styl```. If you want to use third-party CSS you just include it via ```@import 'path/to/your/third-party-styles.css'``` at the top of the main.styl file.
+Javascript entry file: `app/scripts/main.js` <br />
+CSS entry file: `app/stylus/main.styl`<br />
+
+If you want to use third-party CSS you just include it via `@import 'path/to/your/third-party-styles.css'` at the top of the main.styl file.
 
 
 
