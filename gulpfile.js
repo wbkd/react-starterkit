@@ -1,10 +1,9 @@
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var del = require('del');
-// check the environment. set variable via $ gulp --type production; by default its development
+set variable via $ gulp --type production
 var environment = $.util.env.type || 'development';
 var isProduction = environment === 'production';
-// load config depending on the environment
 var webpackConfig = require('./webpack.config.js')[environment];
 
 var port = $.util.env.port || 1337;
