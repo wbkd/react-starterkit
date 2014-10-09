@@ -1,13 +1,12 @@
 {
-  "name": "starterapp",
+  "name": "starterkit-webapp",
   "version": "0.0.1",
   "authors": [
     "@moklick <mo@webkid.io>"
   ],
-  "description": "A super lightweight starting point for an app.",
+  "description": "Lightweight starting point for a web app.",
   "main": "index.html",
   "license": "MIT",
-  "homepage": "http://webkid.io",
   "ignore": [
     "**/.*",
     "node_modules",
