@@ -1,15 +1,13 @@
 /**
- * use this file as a module template
+ * you could use this file as a module template
  */
 
 
 // dependencies
 var utils = require('./utils'),
 
-
   // module name (exports)
   myModule = {},
-
 
   // private fields
   obj = {};
@@ -24,10 +22,11 @@ myModule.getObj = function() {
 
 myModule.fieldName = 123;
 
+
 /* private functions */
 
-function setObj(obj) {
-  obj = obj;
+function setObj(newObject) {
+  obj = newObject;
 }
 
 

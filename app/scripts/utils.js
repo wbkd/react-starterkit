@@ -1,7 +1,9 @@
 /**
- * some helper functions.
- * we don't use 3rd party libs here!
+ * Here you implement your functions you want to use everywhere in your application.
+ * See this functions as an example.
  */
+
+
 var debugMode = true;
 
 /////////////////////
@@ -23,12 +25,10 @@ var isOldBrowser = !(('querySelector' in document) && ('localStorage' in window)
 /// helper functions //
 ///////////////////////
 
-// return true if obj is undefined
 function isUndefined(obj) {
   return typeof obj === 'undefined';
 }
 
-// return true if passed var is a number
 function isNumeric(number) {
   if(isUndefined(number)){
     return false;
@@ -37,7 +37,6 @@ function isNumeric(number) {
   return !isNaN(number) && isFinite(number);
 }
 
-// return german number format
 function numberFormat(number) {
 
   if (!isNumeric(number)) {
@@ -82,13 +81,12 @@ function log(){
 }
 
 module.exports = {
-  // variables
+
   isMobile: isMobile,
   isSmartphone: isSmartphone,
   isOldBrowser: isOldBrowser,
   clickEvent: clickEvent,
 
-  // functions
   isUndefined: isUndefined,
   isNumeric: isNumeric,
   numberFormat: numberFormat,
