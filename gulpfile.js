@@ -15,6 +15,7 @@ gulp.task('scripts', function() {
   return gulp.src(webpackConfig.entry)
     .pipe($.webpack(webpackConfig))
     .pipe(isProduction ? $.uglifyjs() : $.util.noop())
+    .pipe($.size({ title : 'js' }))
     .pipe(gulp.dest(dist + 'js/'))
     .pipe($.connect.reload());
 });
@@ -22,6 +23,7 @@ gulp.task('scripts', function() {
 // copy html from app to dist
 gulp.task('html', function() {
   return gulp.src(app + 'index.html')
+    .pipe($.size({ title : 'html' }))
     .pipe(gulp.dest(dist))
     .pipe($.connect.reload());
 });
@@ -36,7 +38,7 @@ gulp.task('styles',function(cb) {
       // include 'normal' css into main.css
       'include css' : true
     }))
-    // add css for production
+    .pipe($.size({ title : 'css' }))
     .pipe(gulp.dest(dist + 'css/'))
     .pipe($.connect.reload());
 });
@@ -55,6 +57,7 @@ gulp.task('serve', function() {
 // copy images
 gulp.task('images', function(cb) {
   return gulp.src(app + 'images/**/*.{png,jpg,jpeg,gif}')
+    .pipe($.size({ title : 'images' }))
     .pipe(gulp.dest(dist + 'images/'));
 });
 
