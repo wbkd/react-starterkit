@@ -1,7 +1,7 @@
 {
-  "name": "starterkit-webapp",
+  "name": "webkid-react-starterkit",
   "version": "0.0.1",
-  "description": "Lightweight starting point for a web app.",
+  "description": "Lightweight starting point for a react web app.",
   "main": "index.html",
   "scripts": {
     "start": "gulp"
@@ -25,8 +25,8 @@
   },
   "dependencies": {
     "jsx-loader": "^0.12.2",
+    "page": "^1.5.0",
     "react": "^0.12.1",
-    "react-router": "^0.11.4",
     "reflux": "^0.2.0"
   }
 }

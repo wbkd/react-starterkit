@@ -1,16 +1,15 @@
 var React = require('react');
-var Router = require('react-router');
-var Route = Router.Route;
-var DefaultRoute = Router.DefaultRoute;
+var page = require('page');
+var Home = require('./pages/home.jsx');
+var Info = require('./pages/info.jsx');
+var NotFound = require('./pages/notFound.jsx');
 
-var Home = require('./pages/home.jsx')
+var renderPage = function(Page){
+  React.render(<Page />, document.body);
+};
 
-var routes = (
-  <Route handler={Home} path="/">
-    <DefaultRoute handler={Home} />
-  </Route>
-);
+page('/', function(){ renderPage(Home); });
+page('/info', function(){ renderPage(Info); });
+page('*', function(){ renderPage(NotFound); });
 
-Router.run(routes, function (Handler) {
-  React.render(<Handler/>, document.body);
-});
+page();

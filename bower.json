@@ -1,10 +1,10 @@
 {
-  "name": "starterkit-webapp",
+  "name": "webkid-react-starterkit",
   "version": "0.0.1",
   "authors": [
     "@moklick <mo@webkid.io>"
   ],
-  "description": "Lightweight starting point for a web app.",
+  "description": "Lightweight starting point for a react web app.",
   "main": "index.html",
   "license": "MIT",
   "ignore": [

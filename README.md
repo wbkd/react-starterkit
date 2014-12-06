@@ -1,6 +1,6 @@
 # Starterkit
 
-This webapp starterkit provides a prepared development environment based on [gulp](https://github.com/gulpjs/gulp), [stylus](https://github.com/LearnBoost/stylus) and [webpack](https://github.com/webpack/webpack).
+This react starterkit provides a prepared development environment based on [gulp](https://github.com/gulpjs/gulp), [stylus](https://github.com/LearnBoost/stylus) and [webpack](https://github.com/webpack/webpack). It also includes [Reflux](https://github.com/spoike/refluxjs) und [React-Router](https://github.com/rackt/react-route).
 
 ## Installation
 
@@ -36,6 +36,8 @@ $ gulp build --type production
 ```
 
 ## Webpack Hints
+
+We use the jsx-loader in order to load .jsx files via webpack.
 
 ### Imports Loader
 
