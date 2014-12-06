@@ -1,5 +1,4 @@
 var React = require('react');
-var Header = require('../components/header.jsx')
 var ItemList = require('../components/itemList.jsx')
 
 var Home = React.createClass({
@@ -7,7 +6,7 @@ var Home = React.createClass({
   render: function() {
     return (
       <div>
-        <Header />
+        <h1>Home Area</h1>
         <ItemList />
       </div>
     );

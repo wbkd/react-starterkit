@@ -17,6 +17,10 @@ var ItemList = React.createClass({
     ItemActions.loadItems();
   },
 
+  componentWillUnmount: function(){
+    this.unsubscribe();
+  },
+
   onStatusChange: function(state){
     this.setState(state);
   },
