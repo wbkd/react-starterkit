@@ -23,17 +23,18 @@ var ItemList = React.createClass({
 
   render: function() {
 
-    console.log('loading:',this.state.loading);
-    console.log('error:',this.state.error);
-
     var items = this.state.items.map(function(item,itemIndex){
       return <li key={item}>{item}</li>;
-    });
+    }),
+    loading = this.state.loading ? <div>Loading...</div> : '';
 
     return (
-      <ul>
-        {items}
-      </ul>
+      <div>
+        { loading }
+        <ul>
+          {items}
+        </ul>
+      </div>
     );
   }
 
