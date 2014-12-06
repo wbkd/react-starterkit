@@ -8,6 +8,7 @@ var ItemActions = Reflux.createActions([
 
 ItemActions.loadItems.preEmit = function(data){
   // make your api call/ async stuff here
+  // we use setTimeout for faking async behaviour here
   setTimeout(function(){
     var items = ['Foo', 'Bar', 'Lorem'];
     ItemActions.loadItemsSuccess(items);

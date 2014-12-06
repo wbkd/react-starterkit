@@ -5,7 +5,7 @@ var Header = React.createClass({
   render: function() {
     return (
       <header>
-        Header
+        Application Name
       </header>
     );
   }
