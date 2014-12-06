@@ -11,6 +11,7 @@
   "devDependencies": {
     "del": "^0.1.3",
     "gulp": "^3.8.8",
+    "gulp-autoprefixer": "^2.0.0",
     "gulp-concat": "^2.4.1",
     "gulp-connect": "^2.0.6",
     "gulp-livereload": "^2.1.1",
@@ -21,5 +22,11 @@
     "gulp-util": "^3.0.1",
     "gulp-watch": "^1.0.7",
     "gulp-webpack": "^0.4.1"
+  },
+  "dependencies": {
+    "jsx-loader": "^0.12.2",
+    "react": "^0.12.1",
+    "react-router": "^0.11.4",
+    "reflux": "^0.2.0"
   }
 }
