@@ -20,7 +20,13 @@ You can define a port with `$ gulp --port 3333`.
 $ gulp
 ```
 
+**Javascript**
+
 Javascript entry file: `app/scripts/main.js` <br />
+We are using Reflux, which is an implemantion of the [Flux Architecture](http://facebook.github.io/flux/docs/overview.html). Basically it's about how components communicate with each other. If you want to read more about Reflux, check out the readme of the [reflux git repo](https://github.com/spoike/refluxjs). 
+
+**CSS**
+
 CSS entry file: `app/stylus/main.styl`<br />
 
 If you want to use third-party CSS you just include it via `@import 'path/to/your/third-party-styles.css'` at the top of the main.styl file.
