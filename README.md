@@ -1,6 +1,6 @@
 # Starterkit
 
-This react starterkit provides a prepared development environment based on [gulp](https://github.com/gulpjs/gulp), [stylus](https://github.com/LearnBoost/stylus) and [webpack](https://github.com/webpack/webpack). It also includes [Reflux](https://github.com/spoike/refluxjs) und [React-Router](https://github.com/rackt/react-route).
+This react starterkit provides a prepared development environment based on [gulp](https://github.com/gulpjs/gulp), [stylus](https://github.com/LearnBoost/stylus) and [webpack](https://github.com/webpack/webpack). It also includes [Reflux](https://github.com/spoike/refluxjs) and [React-Router](https://github.com/rackt/react-route).
 
 ## Installation
 
