@@ -1,6 +1,5 @@
 var React = require('react');
-var Router = require('react-router');
-var RouteHandler = Router.RouteHandler;
+var RouteHandler = require('react-router').RouteHandler;
 
 var App = React.createClass({
   render: function () {
