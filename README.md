@@ -5,7 +5,7 @@ This react starterkit provides a prepared development environment based on [gulp
 ## Get the kit
 
 ```
-$ git clone https://github.com/wbkd/react-starterkit.git
+$ git clone https://github.com/wbkd/react-starterkit.git && cd react-starterkit
 ```
 
 ## Installation
