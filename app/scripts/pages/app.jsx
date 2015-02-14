@@ -3,6 +3,7 @@ var { RouteHandler } = require('react-router');
 var Header = require('../components/header.jsx')
 
 var App = React.createClass({
+  
   render() {
     return (
       <div>
@@ -13,6 +14,7 @@ var App = React.createClass({
       </div>
     );
   }
+  
 });
 
 module.exports = App;

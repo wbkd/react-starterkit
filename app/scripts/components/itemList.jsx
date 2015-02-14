@@ -26,7 +26,7 @@ var ItemList = React.createClass({
   },
 
   render() {
-    var items = this.state.items.map((item, itemIndex) => (<li key={ item }>{ item }</li>)),
+    var items = this.state.items.map((item, itemIndex) => <li key={ item }>{ item }</li>),
       loading = this.state.loading ? <div>Loading...</div> : '';
 
     return (
@@ -38,6 +38,7 @@ var ItemList = React.createClass({
       </div>
     );
   }
+                                     
 });
 
 module.exports = ItemList;
