@@ -1,9 +1,9 @@
 var React = require('react');
-var Link = require('react-router').Link;
+var { Link } = require('react-router');
 
 var Header = React.createClass({
 
-  render: function() {
+  render() {
     return (
       <header className="clearfix">
         Application Name

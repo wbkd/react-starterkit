@@ -3,21 +3,21 @@ var ItemActions = require('../actions/itemActions');
 
 var ItemStore = Reflux.createStore({
 
-  init : function(){
+  init() {
     this.items = [];
 
-    this.listenTo(ItemActions.loadItems,this.loadItems);
-    this.listenTo(ItemActions.loadItemsSuccess,this.loadItemsSuccess);
-    this.listenTo(ItemActions.loadItemsError,this.loadItemsError);
+    this.listenTo(ItemActions.loadItems, this.loadItems);
+    this.listenTo(ItemActions.loadItemsSuccess, this.loadItemsSuccess);
+    this.listenTo(ItemActions.loadItemsError, this.loadItemsError);
   },
 
-  loadItems: function(){
+  loadItems() {
     this.trigger({ 
       loading: true
     });
   },
 
-  loadItemsSuccess: function(items){
+  loadItemsSuccess(items) {
     this.items = items;
 
     this.trigger({ 
@@ -26,7 +26,7 @@ var ItemStore = Reflux.createStore({
     });
   },
 
-  loadItemsError: function(error){
+  loadItemsError(error) {
     this.trigger({ 
       error : error,
       loading: false

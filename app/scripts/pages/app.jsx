@@ -1,9 +1,9 @@
 var React = require('react');
-var RouteHandler = require('react-router').RouteHandler;
+var { RouteHandler } = require('react-router');
 var Header = require('../components/header.jsx')
 
 var App = React.createClass({
-  render: function () {
+  render() {
     return (
       <div>
         <Header />

@@ -4,7 +4,7 @@ var ItemActions = require('../actions/itemActions');
 
 var ItemList = React.createClass({
 
-  getInitialState: function(){
+  getInitialState() {
     return {
       items : [],
       loading : false,
@@ -12,25 +12,22 @@ var ItemList = React.createClass({
     }
   },
 
-  componentDidMount: function() {
+  componentDidMount() {
     this.unsubscribe = ItemStore.listen(this.onStatusChange);
     ItemActions.loadItems();
   },
 
-  componentWillUnmount: function(){
+  componentWillUnmount() {
     this.unsubscribe();
   },
 
-  onStatusChange: function(state){
+  onStatusChange(state) {
     this.setState(state);
   },
 
-  render: function() {
-
-    var items = this.state.items.map(function(item,itemIndex){
-      return <li key={item}>{item}</li>;
-    }),
-    loading = this.state.loading ? <div>Loading...</div> : '';
+  render() {
+    var items = this.state.items.map((item, itemIndex) => (<li key={ item }>{ item }</li>)),
+      loading = this.state.loading ? <div>Loading...</div> : '';
 
     return (
       <div>
@@ -41,7 +38,6 @@ var ItemList = React.createClass({
       </div>
     );
   }
-
 });
 
 module.exports = ItemList;

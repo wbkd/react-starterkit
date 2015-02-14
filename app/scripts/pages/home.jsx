@@ -3,7 +3,7 @@ var ItemList = require('../components/itemList.jsx')
 
 var Home = React.createClass({
 
-  render: function() {
+  render() {
     return (
       <div>
         <h1>Home Area</h1>

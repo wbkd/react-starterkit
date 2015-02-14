@@ -2,7 +2,7 @@ var React = require('react');
 
 var Info = React.createClass({
 
-  render: function() {
+  render() {
     return (
       <div>
         <h1>Info area</h1>
