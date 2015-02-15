@@ -35,7 +35,6 @@
     "webpack": "^1.5.3"
   },
   "dependencies": {
-    "jsx-loader": "^0.12.2",
     "react": "^0.12.2",
     "react-router": "^0.12.0",
     "reflux": "^0.2.5"
