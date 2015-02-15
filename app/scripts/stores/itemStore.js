@@ -1,5 +1,5 @@
-var Reflux = require('reflux');
-var ItemActions = require('../actions/itemActions');
+import Reflux from 'reflux';
+import ItemActions from '../actions/itemActions';
 
 var ItemStore = Reflux.createStore({
 

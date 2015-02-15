@@ -1,17 +1,17 @@
-var React = require('react');
-var { Route, DefaultRoute, NotFoundRoute } = require('react-router');
+import React from 'react';
+import { Route, DefaultRoute, NotFoundRoute } from 'react-router';
 
-var App = require('./pages/app.jsx');
-var Home = require('./pages/home.jsx');
-var Info = require('./pages/info.jsx');
-var NotFound = require('./pages/notFound.jsx');
+import App from './pages/app.jsx';
+import Home from './pages/home.jsx';
+import Info from './pages/info.jsx';
+import NotFound from './pages/notFound.jsx';
 
 var routes = (
   <Route name="app" path="/" handler={ App }>
     <Route name="info" handler={ Info } />
     <Route name="home" handler={ Home } />
-    <DefaultRoute handler={ Home }/>
-    <NotFoundRoute handler={ NotFound }/>
+    <DefaultRoute handler={ Home } />
+    <NotFoundRoute handler={ NotFound } />
   </Route>
 );
 

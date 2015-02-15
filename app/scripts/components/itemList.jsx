@@ -1,6 +1,6 @@
-var React = require('react');
-var ItemStore = require('../stores/itemStore');
-var ItemActions = require('../actions/itemActions');
+import React from 'react';
+import ItemStore from '../stores/itemStore';
+import ItemActions from '../actions/itemActions';
 
 var ItemList = React.createClass({
 

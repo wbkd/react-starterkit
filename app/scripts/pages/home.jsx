@@ -1,5 +1,5 @@
-var React = require('react');
-var ItemList = require('../components/itemList.jsx')
+import React from 'react';
+import ItemList from '../components/itemList.jsx';
 
 var Home = React.createClass({
 

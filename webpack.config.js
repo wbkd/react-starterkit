@@ -11,7 +11,7 @@ module.exports.development = {
     output: output,
     module : {
         loaders : [
-            { test: /\.jsx?$/, loader: 'jsx-loader?harmony' }
+            { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel-loader' }
         ]
     }
 };
@@ -22,7 +22,7 @@ module.exports.production = {
     output: output,
     module : {
         loaders : [
-            { test: /\.jsx?$/, loader: 'jsx-loader?harmony' }
+            { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel-loader' }
         ]
     }
 };
