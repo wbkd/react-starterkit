@@ -36,7 +36,7 @@ We are using Reflux, which is an implemantion of the [Flux Architecture](http://
 
 **React-Router**
 
-The routing is done with the react-router. It's especially great for SPA's. We would recommend to read the [guide](https://github.com/rackt/react-router/blob/master/docs/guides/overview.md) to get an overview of the router features.
+The routing is done with the [react-router](https://github.com/rackt/react-router). It's especially great for SPA's. We would recommend to read the [guide](https://github.com/rackt/react-router/blob/master/docs/guides/overview.md) to get an overview of the router features.
 
 **ES6 with babel**
 
