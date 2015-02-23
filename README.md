@@ -65,6 +65,7 @@ $ gulp build --type production
 
 ## Webpack Hints
 
+You can find the webpack configuration in the [webpack.config.js file](./webpack.config.js)
 We use the babel-loader in order to load .jsx and .js files via webpack. If it's possible install all your dependencies with NPM. Packages installed with NPM can be used like this:
 
 ```language-javascript
