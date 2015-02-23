@@ -26,7 +26,7 @@ You can define a port with `$ gulp --port 3333`.
 $ gulp
 ```
 
-#### Javascript
+### Javascript
 
 Javascript entry file: `app/scripts/main.js` <br />
 
@@ -44,7 +44,7 @@ We are working with the webpack [babel loader](https://github.com/babel/babel-lo
 
 
 
-#### CSS
+### CSS
 
 CSS entry file: `app/stylus/main.styl`<br />
 
@@ -63,28 +63,17 @@ $ gulp build --type production
 
 ## Webpack Hints
 
-We use the jsx-loader in order to load .jsx files via webpack.
+We use the babel-loader in order to load .jsx and .js files via webpack. If it's possible install all your dependencies with NPM. Packages installed with NPM can be used like this:
 
-### Imports Loader
+```language-javascript
 
-If you want to use plugins for a certain library, that does not require dependencies you can use the [imports loader](http://webpack.github.io/docs/shimming-modules.html#imports-loader). Here the file 'awesome-plugin.js' expects a global variable called jQuery. We can just import that variable via ```jQuery=path/to/jQuery```.
-
-Install the imports loader via:
+var moduleXYZ = require('moduleXYZ');
 
 ```
-npm install --save imports-loader
-```
-You can use it in your code like:
-
-```
-require("imports?jQuery=../bower_components/jquery/dist/jquery!./awesome-plugin.js");
-```
-
-
+You can find all loaders in this [list](http://webpack.github.io/docs/list-of-loaders.html).
 
 
 ###Requirements
 * node
 * npm
-* bower
 * gulp
