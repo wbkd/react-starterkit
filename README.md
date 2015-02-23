@@ -48,7 +48,9 @@ We are working with the webpack [babel loader](https://github.com/babel/babel-lo
 
 CSS entry file: `app/stylus/main.styl`<br />
 
-As you can see we are using stylus to preprocess our .styl files. If you didn't work with a css preprocessor before the [stylus page](http://learnboost.github.io/stylus/) is a good starting point to get to know what stylus can do for you.<br />
+**Stylus**
+
+As you can see we are using stylus to preprocess our .styl files. If you didn't work with a css preprocessor before the [stylus page](http://learnboost.github.io/stylus/) is a good starting point to get to know what stylus can do for you.<br /><br />
 If you want to use third-party CSS you just include it via `@import 'path/to/your/third-party-styles.css'` at the top of the main.styl file.
 
 
