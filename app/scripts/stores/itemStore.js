@@ -1,38 +1,32 @@
-import Reflux from 'reflux';
+import alt from '../alt';
 import ItemActions from '../actions/itemActions';
 
-var ItemStore = Reflux.createStore({
-
-  init() {
+class ItemStore {
+  constructor() {
     this.items = [];
+    this.loading = false;
+    this.error = null;
 
-    this.listenTo(ItemActions.loadItems, this.loadItems);
-    this.listenTo(ItemActions.loadItemsSuccess, this.loadItemsSuccess);
-    this.listenTo(ItemActions.loadItemsError, this.loadItemsError);
-  },
-
-  loadItems() {
-    this.trigger({ 
-      loading: true
-    });
-  },
-
-  loadItemsSuccess(items) {
-    this.items = items;
-
-    this.trigger({ 
-      items : this.items,
-      loading: false
-    });
-  },
-
-  loadItemsError(error) {
-    this.trigger({ 
-      error : error,
-      loading: false
+    this.bindListeners({
+      loadItems: ItemActions.loadItems,
+      loadItemsSuccess: ItemActions.loadItemsSuccess,
+      loadItemsError: ItemActions.loadItemsError
     });
   }
 
-});
+  loadItems() {
+    this.loading = true;
+  }
 
-module.exports = ItemStore;
+  loadItemsSuccess(items) {
+    this.items = items;
+    this.loading = false;
+  }
+
+  loadItemsError(error) {
+    this.error = error;
+    this.loading = false;
+  }
+}
+
+export default alt.createStore(ItemStore, 'ItemStore');
