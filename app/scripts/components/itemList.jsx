@@ -5,20 +5,16 @@ import ItemActions from '../actions/itemActions';
 var ItemList = React.createClass({
 
   getInitialState() {
-    return {
-      items : [],
-      loading : false,
-      error : false
-    }
+    return ItemStore.getState();
   },
 
   componentDidMount() {
-    this.unsubscribe = ItemStore.listen(this.onStatusChange);
+    ItemStore.listen(this.onStatusChange);
     ItemActions.loadItems();
   },
 
   componentWillUnmount() {
-    this.unsubscribe();
+    ItemStore.unlisten(this.onStatusChange);
   },
 
   onStatusChange(state) {
@@ -38,7 +34,7 @@ var ItemList = React.createClass({
       </div>
     );
   }
-                                     
+
 });
 
 module.exports = ItemList;
