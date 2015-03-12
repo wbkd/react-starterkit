@@ -39,15 +39,15 @@ $ gulp build --type production
 
 ## Testing
 
-We use [jest](http://facebook.github.io/jest/) to test our application.
-You can run the tests that are defined under `app/scripts/__tests__` with
+We use [jest](http://facebook.github.io/jest/) to test our application.<br />
+You can run the tests that are defined under [app/scripts/__tests__](./app/scripts/__tests__) with
 
 ```
 $ npm test
 
 ```
 
-In order to test files that are using the react-router we had to add (stubRouterContext.jsx)[./test-utils/stubRouterContext.jsx] which we found [here](https://github.com/rackt/react-router/blob/master/docs/guides/testing.md). 
+In order to test files that are using the react-router we had to add [stubRouterContext.jsx](./test-utils/stubRouterContext.jsx) which we found [here](https://github.com/rackt/react-router/blob/master/docs/guides/testing.md). 
 
 ## Javascript
 
