@@ -35,7 +35,6 @@
     "gulp-watch": "^4.1.1",
     "gulp-webpack": "^1.2.0",
     "jest-cli": "^0.4.0",
-    "lodash.assign": "^3.0.0",
     "object-assign": "^2.0.0",
     "react-tools": "^0.13.0",
     "webpack": "^1.5.3"
