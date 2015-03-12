@@ -15,7 +15,7 @@ This file contains all notable changes.
 * Make ItemList stateles
 * Handle ItemList state in parent component
 
-### 0.1.0 - 2015-10-04
+### 0.1.0 - 2014-10-04
 
 #### Added
 
