@@ -9,8 +9,12 @@ var Header = React.createClass({
         Application Name
 
         <nav className="clearfix">
-          <div className="nav-item"><Link to="home">Home</Link></div>
-          <div className="nav-item"><Link to="info">Info</Link></div>
+          <div className="nav-item">
+            <Link to="home">Home</Link>
+          </div>
+          <div className="nav-item">
+            <Link to="info">Info</Link>
+          </div>
         </nav>
       </header>
     );

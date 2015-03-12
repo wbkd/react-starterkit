@@ -1,6 +1,6 @@
 {
   "name": "webkid-react-starterkit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Lightweight starting point for a react web app.",
   "keywords": [
     "react",
@@ -12,12 +12,14 @@
   ],
   "main": "index.html",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "test": "jest"
   },
   "author": "@moklick <mo@webkid.io>",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^4.0.1",
+    "babel-jest": "^4.0.0",
     "babel-loader": "^4.0.0",
     "del": "^1.1.1",
     "gulp": "^3.8.11",
@@ -32,11 +34,34 @@
     "gulp-util": "^3.0.3",
     "gulp-watch": "^4.1.1",
     "gulp-webpack": "^1.2.0",
+    "jest-cli": "^0.4.0",
+    "lodash.assign": "^3.0.0",
+    "object-assign": "^2.0.0",
+    "react-tools": "^0.13.0",
     "webpack": "^1.5.3"
   },
   "dependencies": {
     "react": "^0.12.2",
     "react-router": "^0.12.0",
     "reflux": "^0.2.5"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "testFileExtensions": [
+      "es6",
+      "js",
+      "jsx"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "jsx",
+      "es6"
+    ],
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/object-assign",
+      "<rootDir>/test-utils/stubRouterContext.jsx"
+    ]
   }
 }

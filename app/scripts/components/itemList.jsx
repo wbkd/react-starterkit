@@ -1,39 +1,21 @@
 import React from 'react';
-import ItemStore from '../stores/itemStore';
-import ItemActions from '../actions/itemActions';
 
 var ItemList = React.createClass({
 
-  getInitialState() {
-    return {
-      items : [],
-      loading : false,
-      error : false
-    }
-  },
-
-  componentDidMount() {
-    this.unsubscribe = ItemStore.listen(this.onStatusChange);
-    ItemActions.loadItems();
-  },
-
-  componentWillUnmount() {
-    this.unsubscribe();
-  },
-
-  onStatusChange(state) {
-    this.setState(state);
+  propTypes: {
+    loading : React.PropTypes.bool,
+    items : React.PropTypes.array
   },
 
   render() {
-    var items = this.state.items.map((item, itemIndex) => <li key={ item }>{ item }</li>),
-      loading = this.state.loading ? <div>Loading...</div> : '';
+    var items = this.props.items.map(item => <li key={ item }>{ item }</li>),
+      loading = this.props.loading ? <div className="loading-label">Loading...</div> : '';
 
     return (
       <div>
         { loading }
         <ul>
-          {items}
+          { items }
         </ul>
       </div>
     );
