@@ -5,7 +5,7 @@ var del = require('del');
 // set variable via $ gulp --type production
 var environment = $.util.env.type || 'development';
 var isProduction = environment === 'production';
-var webpackConfig = require('./webpack.config.js')[environment];
+var webpackConfig = require('./webpack.config.js').getConfig(environment);
 
 var port = $.util.env.port || 1337;
 var app = 'app/';
