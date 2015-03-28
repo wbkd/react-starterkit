@@ -35,4 +35,4 @@ var ItemStore = Reflux.createStore({
 
 });
 
-module.exports = ItemStore;
+export default ItemStore;

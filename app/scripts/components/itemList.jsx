@@ -1,11 +1,10 @@
 import React from 'react';
 
-var ItemList = React.createClass({
-
-  propTypes: {
-    loading : React.PropTypes.bool,
-    items : React.PropTypes.array
-  },
+class ItemList extends React.Component {
+  
+  constructor(){
+    super();
+  }
 
   render() {
     var items = this.props.items.map(item => <li key={ item }>{ item }</li>),
@@ -21,6 +20,11 @@ var ItemList = React.createClass({
     );
   }
                                      
-});
+}
 
-module.exports = ItemList;
+ItemList.propTypes = {
+  loading : React.PropTypes.bool,
+  items : React.PropTypes.array
+}
+
+export default ItemList;

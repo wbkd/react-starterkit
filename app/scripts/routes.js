@@ -15,4 +15,4 @@ var routes = (
   </Route>
 );
 
-module.exports = routes;
+export default routes;

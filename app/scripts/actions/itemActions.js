@@ -18,4 +18,4 @@ ItemActions.loadItems.preEmit = function(data){
   },500);
 };
 
-module.exports = ItemActions;
+export default ItemActions;
