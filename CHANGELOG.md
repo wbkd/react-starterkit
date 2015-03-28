@@ -2,6 +2,12 @@
 
 This file contains all notable changes.
 
+### 0.3.0 - 2015-03-28
+
+#### Changed
+
+* Update packages (now using React v0.13.1)
+* Use ES6 class syntax instead of React.createClass
 
 ### 0.2.0 - 2015-03-10
 
