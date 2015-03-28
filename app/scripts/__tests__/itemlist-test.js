@@ -18,16 +18,16 @@ describe('item list', function() {
 
     expect(itemCount).toBe(3);
 
-    expect(renderedItems[0].getDOMNode().textContent).toEqual('foo');
-    expect(renderedItems[1].getDOMNode().textContent).toEqual('bar');
-    expect(renderedItems[2].getDOMNode().textContent).toEqual('wut');
+    expect(React.findDOMNode(renderedItems[0]).textContent).toEqual('foo');
+    expect(React.findDOMNode(renderedItems[1]).textContent).toEqual('bar');
+    expect(React.findDOMNode(renderedItems[2]).textContent).toEqual('wut');
   });
 
   it('displays loading div', function() {
     var itemList = TestUtils.renderIntoDocument(<ItemList items={ [] } loading={ true } />),
       loadingDiv = TestUtils.findRenderedDOMComponentWithClass(itemList, 'loading-label');
 
-    expect(loadingDiv.getDOMNode().textContent).toEqual('Loading...');
+    expect(React.findDOMNode(loadingDiv).textContent).toEqual('Loading...');
   });
 
 });

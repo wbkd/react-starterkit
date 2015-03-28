@@ -3,6 +3,10 @@ import { Link } from 'react-router';
 
 class Header extends React.Component{
 
+  constructor(props, context) {
+   super(props);
+  }
+
   render() {
     return (
       <header className="clearfix">
@@ -20,6 +24,10 @@ class Header extends React.Component{
     );
   }
 
+}
+
+Header.contextTypes = {
+  router: React.PropTypes.func.isRequired
 }
 
 export default Header;

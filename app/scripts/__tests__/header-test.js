@@ -21,8 +21,8 @@ describe('header', function() {
 
     expect(itemCount).toBe(2);
 
-    expect(renderedItems[0].getDOMNode().textContent).toEqual('Home');
-    expect(renderedItems[1].getDOMNode().textContent).toEqual('Info');
+    expect(React.findDOMNode(renderedItems[0]).textContent).toEqual('Home');
+    expect(React.findDOMNode(renderedItems[1]).textContent).toEqual('Info');
   });
 
 });
