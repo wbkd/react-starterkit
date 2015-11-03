@@ -1,26 +1,18 @@
 import React from 'react';
 
-class ItemList extends React.Component {
-  
-  constructor(){
-    super();
-  }
-
-  render() {
-    var items = this.props.items.map(item => <li key={ item }>{ item }</li>),
-      loading = this.props.loading ? <div className="loading-label">Loading...</div> : '';
+const ItemList = (props) => {
+    var items = props.items.map(item => <li key={ item }>{ item }</li>),
+      loading = props.loading ? <div className="loading-label">Loading...</div> : '';
 
     return (
       <div>
-        { loading }
+        {loading}
         <ul>
-          { items }
+          {items}
         </ul>
       </div>
-    );
-  }
-                                     
-}
+    );                               
+};
 
 ItemList.propTypes = {
   loading : React.PropTypes.bool,

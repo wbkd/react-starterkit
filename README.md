@@ -26,7 +26,7 @@ Builds the application and starts a webserver with livereload. By default the we
 You can define a port with `$ gulp --port 3333`.
 
 ```
-$ gulp
+$ npm start
 ```
 
 ## Build

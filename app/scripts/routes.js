@@ -6,7 +6,7 @@ import Home from './pages/home.jsx';
 import Info from './pages/info.jsx';
 import NotFound from './pages/notFound.jsx';
 
-var routes = 
+var routes = (
   <Router>
     <Route path='app' path='/' component={ App }>
       <Route path='info' component={ Info } />
@@ -15,6 +15,6 @@ var routes =
       <Route path='*' component={NotFound}/>
     </Route>
   </Router>
-;
+);
 
 export default routes;

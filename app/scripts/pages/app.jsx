@@ -1,20 +1,15 @@
 import React from 'react';
-import { RouteHandler } from 'react-router';
 import Header from '../components/header.jsx'
 
-class App extends React.Component {
-  
-  render() {
+const App = (props) => {
     return (
       <div>
         <Header />
         <div className="content">
-          { this.props.children }
+          {props.children}
         </div>
       </div>
     );
-  }
-  
-}
+};
 
 export default App;
