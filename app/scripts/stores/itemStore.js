@@ -1,7 +1,7 @@
 import Reflux from 'reflux';
 import ItemActions from '../actions/itemActions';
 
-var ItemStore = Reflux.createStore({
+let ItemStore = Reflux.createStore({
   listenables: ItemActions,
   
   init() {
