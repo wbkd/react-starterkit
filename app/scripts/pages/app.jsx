@@ -9,7 +9,7 @@ class App extends React.Component {
       <div>
         <Header />
         <div className="content">
-          <RouteHandler/>
+          { this.props.children }
         </div>
       </div>
     );

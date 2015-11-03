@@ -26,8 +26,5 @@ class Header extends React.Component{
 
 }
 
-Header.contextTypes = {
-  router: React.PropTypes.func.isRequired
-}
 
 export default Header;

@@ -1,7 +1,8 @@
-var gulp = require('gulp');
 var path = require('path');
-var $ = require('gulp-load-plugins')();
 var del = require('del');
+var gulp = require('gulp');
+var $ = require('gulp-load-plugins')();
+
 // set variable via $ gulp --type production
 var environment = $.util.env.type || 'development';
 var isProduction = environment === 'production';
@@ -91,7 +92,7 @@ gulp.task('clean', function(cb) {
 
 
 // by default build project and then watch files in order to trigger livereload
-gulp.task('default', ['build', 'serve', 'watch']);
+gulp.task('default', ['images', 'html','scripts', 'styles', 'serve', 'watch']);
 
 // waits until clean is finished then builds the project
 gulp.task('build', ['clean'], function(){

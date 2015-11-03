@@ -13,7 +13,10 @@ module.exports.getConfig = function(type) {
       loaders: [{
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loader: 'babel-loader'
+        loader: 'babel',
+        query: {
+          presets: ['react', 'es2015']
+        }
       }]
     }
   };
