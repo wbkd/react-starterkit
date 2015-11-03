@@ -1,21 +1,19 @@
 import Reflux from 'reflux';
 
-var ItemActions = Reflux.createActions([
-  'loadItems',
-  'loadItemsSuccess',
-  'loadItemsError'
-]);
+var ItemActions = Reflux.createActions({
+  'loadItems': {children: ['completed', 'failed']}
+});
 
-ItemActions.loadItems.preEmit = function(data){
+ItemActions.loadItems.listen(function(){
   // make your api call/ async stuff here
   // we use setTimeout for faking async behaviour here
-  setTimeout(function(){
+  setTimeout(() => {
     var items = ['Foo', 'Bar', 'Lorem'];
-    ItemActions.loadItemsSuccess(items);
+    this.completed(items);
 
     // on error
-    // ItemActions.loadItemsError('an error occured');
-  },500);
-};
+    // this.failed('an error occured');
+  }, 500);
+});
 
 export default ItemActions;
