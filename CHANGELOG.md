@@ -2,6 +2,13 @@
 
 This file contains all notable changes.
 
+### 1.0.0 - 2015-03-28
+
+#### Changed
+
+* Update dependencies (now using React v0.14.2 and ReactRouter v1.0.0)
+* Use stateless functional components
+
 ### 0.3.0 - 2015-03-28
 
 #### Changed

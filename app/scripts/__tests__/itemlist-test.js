@@ -2,32 +2,25 @@
 
 jest.dontMock('../components/itemList.jsx');
 
-var React = require('react/addons');
+var React = require('react');
+var ReactDOM = require('react-dom');
+var TestUtils = require('react-addons-test-utils');
 var ItemList = require('../components/itemList.jsx');
-
-var TestUtils = React.addons.TestUtils;
 
 describe('item list', function() {
 
   it('displays three items with right text content', function() {
 
     var testItems = ['foo', 'bar', 'wut'],
-      itemList = TestUtils.renderIntoDocument(<ItemList items={ testItems } loading={ false } />),
-      renderedItems = TestUtils.scryRenderedDOMComponentsWithTag(itemList, 'li'),
-      itemCount = renderedItems.length;
+      itemList = TestUtils.renderIntoDocument(<div><ItemList items={ testItems } loading={ false } /></div>);
 
-    expect(itemCount).toBe(3);
-
-    expect(React.findDOMNode(renderedItems[0]).textContent).toEqual('foo');
-    expect(React.findDOMNode(renderedItems[1]).textContent).toEqual('bar');
-    expect(React.findDOMNode(renderedItems[2]).textContent).toEqual('wut');
+    expect(ReactDOM.findDOMNode(itemList).textContent).toEqual(testItems.join(''));
   });
 
   it('displays loading div', function() {
-    var itemList = TestUtils.renderIntoDocument(<ItemList items={ [] } loading={ true } />),
-      loadingDiv = TestUtils.findRenderedDOMComponentWithClass(itemList, 'loading-label');
+    var itemList = TestUtils.renderIntoDocument(<div><ItemList items={[]} loading={ true } /></div>);
 
-    expect(React.findDOMNode(loadingDiv).textContent).toEqual('Loading...');
+    expect(ReactDOM.findDOMNode(itemList).textContent).toEqual('Loading...');
   });
 
 });

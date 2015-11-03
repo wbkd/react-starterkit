@@ -1,6 +1,6 @@
 {
   "name": "webkid-react-starterkit",
-  "version": "0.3.1",
+  "version": "1.0.0",
   "description": "Lightweight starting point for a react web app.",
   "keywords": [
     "react",
@@ -39,7 +39,7 @@
     "jest-cli": "^0.7.0",
     "object-assign": "^4.0.1",
     "orchestrator": "^0.3.7",
-    "react-tools": "^0.13.3",
+    "react-addons-test-utils": "^0.14.2",
     "webpack": "^1.12.2"
   },
   "dependencies": {
@@ -51,21 +51,12 @@
   },
   "jest": {
     "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
-    "testFileExtensions": [
-      "es6",
-      "js",
-      "jsx"
-    ],
-    "moduleFileExtensions": [
-      "js",
-      "json",
-      "jsx",
-      "es6"
-    ],
     "unmockedModulePathPatterns": [
       "<rootDir>/node_modules/react",
-      "<rootDir>/node_modules/object-assign",
-      "<rootDir>/test-utils/stubRouterContext.jsx"
+      "<rootDir>/node_modules/react-dom",
+      "<rootDir>/node_modules/react-addons-test-utils",
+      "<rootDir>/node_modules/fbjs",
+      "<rootDir>/node_modules/object-assign"
     ]
   }
 }
