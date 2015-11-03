@@ -47,8 +47,6 @@ $ npm test
 
 ```
 
-In order to test files that are using the react-router we had to add [stubRouterContext.jsx](./test-utils/stubRouterContext.jsx) which we found [here](https://github.com/rackt/react-router/blob/master/docs/guides/testing.md). 
-
 ## Javascript
 
 Javascript entry file: `app/scripts/main.js` <br />
