@@ -87,7 +87,7 @@ gulp.task('watch', function() {
 
 // remove bundels
 gulp.task('clean', function(cb) {
-  del([dist], cb);
+  return del([dist], cb);
 });
 
 
