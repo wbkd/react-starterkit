@@ -2,6 +2,14 @@
 
 This file contains all notable changes.
 
+### 1.0.1 - 2015-12-14
+
+#### Changed
+
+* Fix `gulp build` task adding a `return` statement to `gulp clean`
+* Update project dependencies and React/Reflux structure (React v0.14.x, Reflux v0.3.0, React-router v1.0.0, introduce History and React-DOM)
+* Update tests
+
 ### 1.0.0 - 2015-03-28
 
 #### Changed
