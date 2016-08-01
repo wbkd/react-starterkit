@@ -1,6 +1,5 @@
 import React from 'react';
-import { Router, Route, IndexRoute } from 'react-router';
-import createHistory from 'history/lib/createHashHistory'
+import { Router, Route, IndexRoute, browserHistory} from 'react-router';
 
 import App from './pages/app.jsx';
 import Home from './pages/home.jsx';
@@ -12,7 +11,7 @@ const historyOptions = {
 };
 
 const routes = (
-  <Router history={createHistory(historyOptions)}>
+  <Router history={browserHistory}>
     <Route path='/' component={ App }>
       <IndexRoute component={ Home }/>
       <Route path='info' component={ Info } />

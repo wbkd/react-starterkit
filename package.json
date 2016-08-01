@@ -44,10 +44,10 @@
   },
   "dependencies": {
     "history": "^1.13.0",
-    "react": "^0.14.2",
-    "react-dom": "^0.14.2",
-    "react-router": "^1.0.0",
-    "reflux": "^0.3.0"
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "react-router": "^2.6.1",
+    "reflux": "^0.4.1"
   },
   "jest": {
     "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
